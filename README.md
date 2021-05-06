@@ -1,4 +1,4 @@
-# python-classes
+# Python Classes
 
 ### Running the scripts
 
