@@ -1,7 +1,7 @@
 MODE_ENCRYPT = 1
 MODE_DECRYPT = 0
 
-def caesar(data, chave, mode):
+def cesar(data, chave, mode):
     alfabeto = 'abcdefghijklmnopqrstuvwyzàáãâéêóôõíúçABCDEFGHIJKLMNOPQRSTUVWYZÀÁÃÂÉÊÓÕÍÚÇ'
     dado = ''
     for c in data:
@@ -22,7 +22,7 @@ chave = input("Informe o número de posições de deslocamento na cifra: ")
 
 original = 'Esse é o meu primeiro algoritmo de criptografia de César'
 print('Mensagem Original:', original)
-criptografada = caesar(original, int(chave), MODE_ENCRYPT)
+criptografada = cesar(original, int(chave), MODE_ENCRYPT)
 print('Mensagem Criptografada:', criptografada)
-descriptografada = caesar(criptografada, int(chave), MODE_DECRYPT)
+descriptografada = cesar(criptografada, int(chave), MODE_DECRYPT)
 print('Mensagem Decriptografada:', descriptografada)
